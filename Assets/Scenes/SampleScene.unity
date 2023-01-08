@@ -172,7 +172,7 @@ MonoBehaviour:
     m_Root: {fileID: 258920140}
     m_Mid: {fileID: 1428980505}
     m_Tip: {fileID: 1957113161}
-    m_Target: {fileID: 1897873800}
+    m_Target: {fileID: 1055719625}
     m_Hint: {fileID: 0}
     m_TargetPositionWeight: 1
     m_TargetRotationWeight: 1
@@ -675,14 +675,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008156621}
-  m_LocalRotation: {x: -0.06179031, y: -0.41791838, z: -0.048465416, w: 0.90508413}
-  m_LocalPosition: {x: 0.021, y: 0.279, z: -0.146}
+  m_LocalRotation: {x: 0.040891387, y: -0.45311937, z: 0.35935032, w: 0.8147872}
+  m_LocalPosition: {x: -0.045, y: 0.28, z: -0.137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1128766266}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: -8.764, y: -49.409, z: -2.092}
+  m_LocalEulerAnglesHint: {x: 23.097, y: -50.425, z: 36.608}
 --- !u!4 &1017511278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2211274696145523619, guid: 3aab83b3f86d1a548a4605f5e5b229ae, type: 3}
@@ -716,14 +716,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055719624}
-  m_LocalRotation: {x: 0.772932, y: 0.14945804, z: 0.52626806, w: 0.32137272}
-  m_LocalPosition: {x: -0.2579, y: 0.0477, z: 0.1031}
+  m_LocalRotation: {x: 0.81197506, y: -0.24390425, z: 0.5302579, w: 0.0058188704}
+  m_LocalPosition: {x: -0.252, y: 0.042, z: 0.126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7878236118709720831}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 19.846, y: -615.247, z: 142.754}
+  m_LocalEulerAnglesHint: {x: 15.552, y: 117.014, z: 203.875}
 --- !u!4 &1096167653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 566543607707561233, guid: 3aab83b3f86d1a548a4605f5e5b229ae, type: 3}
@@ -1407,14 +1407,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450260802}
-  m_LocalRotation: {x: -0.19260368, y: -0.73198724, z: 0.33165568, w: 0.563119}
-  m_LocalPosition: {x: -0.211, y: 0.353, z: -0.026}
+  m_LocalRotation: {x: -0.2635754, y: -0.4913162, z: 0.7051567, w: 0.43805313}
+  m_LocalPosition: {x: -0.203, y: 0.322, z: -0.117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1128766266}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 27.516, y: -64.753, z: 98.653}
 --- !u!4 &1513593348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3943626325079455222, guid: 3aab83b3f86d1a548a4605f5e5b229ae, type: 3}
@@ -1579,6 +1579,15 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 3aab83b3f86d1a548a4605f5e5b229ae, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'JU_hand_R'\n\tTransform 'JU_arm_R'\n\tTransform
+        'JU_hand_L'\n\tTransform 'JU_elb_R'\n\tTransform 'JU_arm_L'\n\tTransform
+        'JU_elb_L'\n\tTransform 'JU_hand_R'\n\tTransform 'JU_arm_R'\n\tTransform
+        'JU_hand_L'\n\tTransform 'JU_elb_R'\n\tand more ..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 3aab83b3f86d1a548a4605f5e5b229ae, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
@@ -1736,14 +1745,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897873799}
-  m_LocalRotation: {x: 0.94012433, y: -0.17973737, z: 0.18899603, w: 0.21941103}
-  m_LocalPosition: {x: -0.227, y: 0.037, z: 0.067}
+  m_LocalRotation: {x: 0.85782456, y: -0.17333256, z: 0.40350226, w: 0.26698086}
+  m_LocalPosition: {x: -0.1847, y: 0.0397, z: 0.1103}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7878236118709720831}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 28.717, y: 161.623, z: 196.905}
+  m_LocalEulerAnglesHint: {x: 36.721, y: 131.566, z: 185.866}
 --- !u!4 &1898579997 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6061354728375974008, guid: 3aab83b3f86d1a548a4605f5e5b229ae, type: 3}
@@ -1848,7 +1857,7 @@ MonoBehaviour:
     m_Root: {fileID: 193619373}
     m_Mid: {fileID: 283430965}
     m_Tip: {fileID: 1898579997}
-    m_Target: {fileID: 1450260803}
+    m_Target: {fileID: 1008156622}
     m_Hint: {fileID: 0}
     m_TargetPositionWeight: 1
     m_TargetRotationWeight: 1
@@ -1930,8 +1939,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119920423961183656}
-  m_LocalRotation: {x: -0.03431355, y: 0.5473256, z: -0.57388854, w: 0.6082017}
-  m_LocalPosition: {x: 0.059, y: 0.045, z: -0.007}
+  m_LocalRotation: {x: -0.020048065, y: 0.37194273, z: -0.8243579, w: 0.42625186}
+  m_LocalPosition: {x: 0.063, y: 0.038, z: 0.002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1939,4 +1948,4 @@ Transform:
   - {fileID: 1897873800}
   m_Father: {fileID: 1251432294}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: -215.907, y: -119.47299, z: 114.738}
+  m_LocalEulerAnglesHint: {x: -216.594, y: -154.145, z: 63.364998}
