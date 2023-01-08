@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee83eb3c34e20ae4da0ec4ccea52ae8f
+guid: d95b20236985689458d4a9147a94a235
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "\u4E3E\u67AA\u7784\u51C6\u8DD1"
+      name: "\u8D70\u8DEF\u4E3E\u67AA\u7784\u51C6"
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 43
+      lastFrame: 82
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -51,7 +51,7 @@ ModelImporter:
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 1
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 1
+      keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000

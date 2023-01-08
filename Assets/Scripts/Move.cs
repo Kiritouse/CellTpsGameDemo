@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
         RotatePlayer();
         MovePlayer();   
     }
-    private void OnAnimatorIK(int layerIndex)
+   /*private void OnAnimatorIK(int layerIndex)
     {
         animator.SetIKPosition(AvatarIKGoal.RightHand, rightHandPosition.position);
         animator.SetIKRotation(AvatarIKGoal.RightHand,rightHandPosition.rotation);
@@ -43,11 +43,24 @@ public class Player : MonoBehaviour
         animator.SetIKRotationWeight(AvatarIKGoal.LeftHand,1f);
         animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
         animator.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
-    }
+    }*/
     public void GetPlayerMoveInput(InputAction.CallbackContext ctx)
     {
       playerInputVec = ctx.ReadValue<Vector2>();  
          
+    }
+    public void GetPlayerAim(InputAction.CallbackContext ctx)
+    {
+        if(ctx.action.phase==InputActionPhase.Started)
+        {
+            animator.SetBool("IsAiming", true);
+        }
+        else if(ctx.action.phase==InputActionPhase.Canceled)
+        {
+            animator.SetBool("IsAiming", false);
+        }
+
+
     }
     public void GetPlayerRunInput(InputAction.CallbackContext ctx)
     {
