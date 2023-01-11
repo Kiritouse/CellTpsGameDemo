@@ -73,6 +73,8 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineWidth: 0.01
     - _Parallax: 0.02
+    - _RimBloomExp: 0
+    - _RimBloomMulti: 0
     - _RimRange: 0.5
     - _ShadowRange: 0.469
     - _ShadowSmooth: 0

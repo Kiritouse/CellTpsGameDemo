@@ -1,4 +1,4 @@
-﻿Shader "Unlit/CelRenderOfBump"
+﻿Shader "Unlit/CelRenderOfBumpFinal"
 {
     Properties
     {
@@ -23,6 +23,8 @@
          [Space(20)]
         _RimColor("Rim Color",Color) = (255,255,255,0)
         _RimRange("Rim Range",Range(0,1)) = 0.5
+        _RimBloomMulti("RimBloomMulti",Range(0,100))=0.5
+        _RimBloomExp("RimBloomExp",Range(0,100)) = 0.5
     }
         SubShader
     {
@@ -56,6 +58,8 @@
             half _SpecularGloss;
             float4 _RimColor;
             half _RimRange;
+            half _RimBloomMulti;
+            half _RimBloomExp;
             struct a2v
             {
                 float4 vertex : POSITION;
@@ -70,7 +74,6 @@
             { 
                 float4 pos : SV_POSITION;//裁剪空间下的顶点坐标
                 float4 uv : TEXCOORD1;//xy分量存储纹理贴图坐标,zw贴图存储法线贴图坐标
-                
                 float4 T2W0:TEXCOORD2;
                 float4 T2W1:TEXCOORD3;
                 float4 T2W2:TEXCOORD4;
@@ -108,10 +111,15 @@
                 //float3 worldNormal =normalize( float3(i.T2W0.z, i.T2W1.z, i.T2W2.z));
                 half3 worldLightDir = normalize(UnityWorldSpaceLightDir(worldPos));
 
-                float3 bump = UnpackNormal(tex2D(_BumpMap, i.uv.zw));
+                float3 bump = UnpackNormal(tex2D(_BumpMap, i.uv.zw));//解开uv，bump就是经过加上法线贴图运算后重新得到的法线
                 bump.xy *= _BumpScale;
                 bump.z = sqrt(1.0 - saturate(dot(bump.xy, bump.xy)));
                 bump = normalize(float3 (dot(i.T2W0.xyz, bump), dot(i.T2W1.xyz, bump), dot(i.T2W2.xyz, bump)));
+               
+              
+
+
+
      
                 half halfLambert = dot(bump, worldLightDir) * 0.5 + 0.5;
                // half3 diffuse = halfLambert > _ShadowRange ? _MainColor : _ShadowColor; 
@@ -133,7 +141,12 @@
                 half f = 1.0 - saturate(dot(viewDir, bump));
                 //saturate函数可以将dot的结果规范到[0,1];
                 fixed3 rimColor = f* _RimColor.rgb*_RimColor.a;
-                col.rgb = (diffuse + specular+rimColor*_RimRange) * _LightColor0.rgb;
+
+                //后处理Bloom效果
+                half NdotL = max(0, dot(bump, worldLightDir));
+                half rimBloom = pow(f, _RimBloomExp) * _RimBloomMulti * NdotL;
+
+                col.rgb = (diffuse + specular+rimColor*_RimRange+rimBloom) * _LightColor0.rgb;
 
 
              

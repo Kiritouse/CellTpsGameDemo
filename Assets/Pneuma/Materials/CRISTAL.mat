@@ -12,8 +12,10 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_InvalidKeywords:
+  - _EMISSION
+  - _NORMALMAP
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -73,9 +75,11 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineWidth: 0.01
     - _Parallax: 0.02
-    - _RimRange: 0.875
-    - _ShadowRange: 0.5
-    - _ShadowSmooth: 0.117
+    - _RimBloomExp: 74.2
+    - _RimBloomMulti: 0
+    - _RimRange: 1
+    - _ShadowRange: 0.541
+    - _ShadowSmooth: 0.155
     - _SmoothnessTextureChannel: 0
     - _SpecularGloss: 4
     - _SpecularHighlights: 1
@@ -86,10 +90,10 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.23074007, g: 1, b: 1, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutLineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0.38431376, g: 0.91372555, b: 0.59607846, a: 1}
-    - _ShadowColor: {r: 0.7, g: 0.7, b: 0.8, a: 1}
-    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0, g: 1, b: 0.9616947, a: 1}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

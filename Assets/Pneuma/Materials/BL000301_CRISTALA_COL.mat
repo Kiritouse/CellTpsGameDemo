@@ -8,12 +8,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BL000301_CRISTALA_COL
-  m_Shader: {fileID: 4800000, guid: 5eb3aef6187b42847aaf067e722caec1, type: 3}
+  m_Shader: {fileID: 4800000, guid: 86e67ea45c128ca4dbbe75553d4511fb, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _EMISSION
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -24,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: b748c14514c28d94cae511c582d2ebe8, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -73,9 +74,11 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineWidth: 0.023
     - _Parallax: 0.02
+    - _RimBloomExp: 55.7
+    - _RimBloomMulti: 0.8
     - _RimMax: 1
     - _RimMin: 1
-    - _RimRange: 1
+    - _RimRange: 0.94
     - _RimSmooth: 0.5
     - _ShadowRange: 0.545
     - _ShadowSmooth: 0.047
@@ -88,11 +91,11 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.1461967, g: 0.8301887, b: 0.38814092, a: 1}
+    - _EmissionColor: {r: 0, g: 1, b: 0.7285068, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutLineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0.3529412, g: 0.9568628, b: 0.6509804, a: 1}
+    - _RimColor: {r: 0, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0.7, g: 0.7, b: 0.8, a: 1}
-    - _SpecularColor: {r: 0.11433481, g: 0.8867924, b: 0.6600791, a: 1}
+    - _SpecularColor: {r: 0.17254902, g: 0.17254902, b: 0.17254902, a: 1}
   m_BuildTextureStacks: []
